@@ -1,0 +1,47 @@
+topic-01:远程仓库相关命令
+
+检出仓库: 
+git clone https://github.com/jingjitree/git.git
+
+查看远程仓库: 
+git remote -v
+
+添加远程仓库
+语法：git remote add [name] [url]
+git remote add tree https://github.com/jingjitree/git.git
+
+删除远程仓库
+语法：git remote rm [name]
+git remote rm tree
+
+修改远程仓库
+语法：git remote set-url --push [name] [newUrl]
+
+拉取远程仓库
+语法：git pull [remoteName] [localBranchName]
+
+推送远程仓库
+语法：git push [remoteName] [localBranchName]
+
+topic-02：分支（branch）操作相关
+查看本地分支
+git branch
+
+查看远程分支
+git branch -r 
+
+创建本地分支
+语法：git branch [name]
+git branch future
+
+
+
+
+
+
+
+
+
+
+
+
