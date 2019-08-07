@@ -33,12 +33,24 @@ git branch -r
 创建本地分支
 语法：git branch [name]
 git branch future
+	(如果创建分支失败，请先commit一次
+		git .
+		git commit -m '注释'
+		再次执行：
+		git branch future
+	)
 
 将本地分支提交到远程仓库
 语法：git push origin [name]
 git push origin future
 
 
+切换分支
+语法：git checkout [name]
+git checkout future
+
+创建并切换到新分支
+git checkout -b future-test
 
 
 
