@@ -34,7 +34,9 @@ git branch -r
 语法：git branch [name]
 git branch future
 
-
+将本地分支提交到远程仓库
+语法：git push origin [name]
+git push origin future
 
 
 
