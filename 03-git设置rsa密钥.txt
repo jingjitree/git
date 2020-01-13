@@ -1,0 +1,42 @@
+topic-01:为用户生成rsa密钥
+	ssh-keygen -t rsa -C "邮箱账户"
+	
+	#如下是演示
+	ssh-keygen -t rsa -C 'zypstudy@163.com'
+Generating public/private rsa key pair.
+#这里输入存入rsa密钥的路径，jackzhoustudy文件夹必须存在，否则创建错误
+Enter file in which to save the key (/c/Users/admin/.ssh/id_rsa): /c/Users/admin/.ssh/jackzhoustudy/id_rsa
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/admin/.ssh/jackzhoustudy/id_rsa.
+Your public key has been saved in /c/Users/admin/.ssh/jackzhoustudy/id_rsa.pub.
+The key fingerprint is:
+SHA256:QbVtU5yoQQwo+d9FzD0Qr5cb/FPQeGbKLU/TkR7ptGg zypstudy@163.com
+The key's randomart image is:
++---[RSA 3072]----+
+|     . .o=ooo*.. |
+|    o ..  oo=o=oo|
+|     o  . .++ +B=|
+|      .  ....==O=|
+|       .S. ..EO==|
+|        . . .. Bo|
+|              ..o|
+|                .|
+|                 |
++----[SHA256]-----+
+
+topic-02:在github上配置sshKey：将id_rsa.pub的全部内容复制github进去
+
+
+topic-03:测试是否能连接
+	ssh -T git@github.com
+	
+	#看到如下信息，连接成功
+	Hi jackZhoustudy! You've successfully authenticated, but GitHub does not provide shell access.
+
+	
+
+
+
+
+
