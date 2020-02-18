@@ -57,6 +57,9 @@ git checkout -b future-test
 git branch -d [branchName]
 git branch -d future-test
 
+删除远程分支
+git push origin --delete <branchName>
+
 
 topic-03:git记住用户名和密码
 永久记住密码
